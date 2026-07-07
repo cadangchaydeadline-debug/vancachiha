@@ -82,18 +82,12 @@ nav a:hover{
 
 }
 
-.hero h1{
-
-    font-size:42px;
-
-    margin-bottom:20px;
-
-}
-
-.hero p{
-
-    font-size:20px;
-
-    color:#777;
-
+.quote{
+    font-size:28px;        /* Cỡ chữ */
+    font-style:italic;     /* In nghiêng */
+    font-weight:400;       /* Không quá đậm */
+    color:#555;
+    line-height:1.8;
+    text-align:center;
+    margin:12px 0;
 }
