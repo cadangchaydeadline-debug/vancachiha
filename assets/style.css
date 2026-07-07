@@ -83,11 +83,10 @@ nav a:hover{
 }
 
 .quote{
-    font-size:28px;        /* Cỡ chữ */
-    font-style:italic;     /* In nghiêng */
-    font-weight:400;       /* Không quá đậm */
-    color:#555;
-    line-height:1.8;
+    font-size:24px;
+    font-style:italic;
+    color:#666;
+    line-height:1.9;
     text-align:center;
-    margin:12px 0;
+    margin:10px 0;
 }
