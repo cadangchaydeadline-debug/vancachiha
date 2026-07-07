@@ -310,10 +310,12 @@ nav a:hover{
 }
 
 .book-info h3{
-
     font-size:22px;
-
     margin-bottom:12px;
+
+    min-height:60px;      /* Luôn chừa chỗ cho 2 dòng */
+    line-height:30px;
+}
 
 }
 
