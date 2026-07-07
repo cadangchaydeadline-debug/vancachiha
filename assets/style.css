@@ -304,8 +304,13 @@ nav a:hover{
 
 }
 .book-info{
-
     padding:20px;
+
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
+}
 
 }
 
