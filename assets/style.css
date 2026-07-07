@@ -262,3 +262,50 @@ nav a:hover{
     padding:40px;
 
 }
+.chapters{
+
+    max-width:1100px;
+
+    margin:40px auto 80px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+}
+
+.chapters h2{
+
+    margin-bottom:25px;
+
+}
+
+.chapters a{
+
+    display:block;
+
+    padding:18px;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    background:#f5f7fb;
+
+    text-decoration:none;
+
+    color:#444;
+
+    transition:.25s;
+
+}
+
+.chapters a:hover{
+
+    background:#3cb6a3;
+
+    color:white;
+
+}
