@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vân Ca Chi Hạ</title>
-
-<link rel="stylesheet" href="assets/css/style.css"></head>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
 <body>
 
-<header>
-    <div class="logo">
-        🌸 Vân Ca Chi Hạ
-    </div>
+<header class="site-header">
+    <div class="logo">🌸 Vân Ca Chi Hạ</div>
 
     <nav>
-        <a href="#">Trang chủ</a>
+        <a href="index.html">Trang chủ</a>
         <a href="#">Danh sách truyện</a>
         <a href="#">Thể loại</a>
         <a href="#">Mới cập nhật</a>
@@ -24,118 +22,82 @@
 
 <main>
 
-   <section class="hero">
+    <section class="hero">
+        <h1>Vân Ca Chi Hạ</h1>
 
-    <div class="hero-content">
+        <p class="quote">Cả một đời rất dài, chọn sai người là dày vò.</p>
+        <p class="quote">Một đời rất ngắn, chọn đúng người thì một đời cũng không đủ.</p>
+    </section>
 
-        <h2>Vân Ca Chi Hạ</h2>
-
-        <p class="quote">
-            Cả một đời rất dài, chọn sai người là dày vò.
-        </p>
-
-        <p class="quote">
-            Một đời rất ngắn, chọn đúng người thì một đời cũng không đủ.
-        </p>
-
-        <a href="#" class="btn">
-            Dạo bước
-        </a>
-
-    </div>
-
-   </section>
     <section class="search-box">
+        <input type="text" placeholder="🔍 Tìm truyện theo tên...">
+        <button>Tìm kiếm</button>
+    </section>
 
-    <input type="text" placeholder="🔍 Tìm truyện theo tên...">
-
-    <button>Tìm kiếm</button>
-
-</section>
     <section class="featured">
-
-    <div class="featured-card">
-
-        <img src="https://placehold.co/280x400?text=Cover" alt="Bìa truyện">
+        <div class="featured-cover">
+            <img src="https://placehold.co/280x400?text=Cover" alt="Trên Núi Có Chuyện Gì?">
+        </div>
 
         <div class="featured-info">
-
-            <span class="featured-tag">✨ Truyện nổi bật</span>
+            <span class="label">🌿 Mời bạn một câu chuyện</span>
 
             <h2>Trên Núi Có Chuyện Gì?</h2>
 
-            <p class="featured-meta">
-                Đời thường · Chữa lành · HE
+            <p class="meta">Đời thường · Chữa lành · HE</p>
+
+            <p class="desc">
+                Một câu chuyện nhẹ nhàng giữa núi rừng, nơi những cuộc gặp gỡ bình dị
+                lại có thể trở thành điều khiến người ta nhớ mãi.
             </p>
 
-            <p class="featured-desc">
-                Một câu chuyện chữa lành nhẹ nhàng giữa núi rừng. Có những cuộc gặp gỡ tưởng chừng rất bình thường, nhưng lại đủ khiến người ta nhớ mãi.
-            </p>
+            <a href="novels/tren-nui-co-chuyen-gi.html" class="main-btn">Đọc ngay</a>
+        </div>
+    </section>
 
-            <a href="novels/tren-nui-co-chuyen-gi.html" class="btn">
-                📖 Đọc ngay
-            </a>
+    <section class="latest">
+        <h2>📚 Tủ nhỏ nhập thêm sách</h2>
+
+        <div class="book-grid">
+
+            <article class="book-card">
+                <img src="https://placehold.co/220x300?text=Cover" alt="Trên Núi Có Chuyện Gì?">
+
+                <div class="book-info">
+                    <h3>Trên Núi Có Chuyện Gì?</h3>
+                    <p class="genre">Đời thường · Chữa lành · HE</p>
+                    <p>Tác giả: Uông Nhạ Nhạ</p>
+                    <p>📚 41 chương</p>
+                    <p>👁️ 12.345 lượt xem</p>
+                    <p class="status">🟢 Kết thúc</p>
+
+                    <a href="novels/tren-nui-co-chuyen-gi.html" class="read-btn">Đọc ngay</a>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <img src="https://placehold.co/220x300?text=Cover" alt="Xám và Trắng">
+
+                <div class="book-info">
+                    <h3>Xám và Trắng</h3>
+                    <p class="genre">Chữa lành · Tâm lý nhẹ · HE</p>
+                    <p>Tác giả: Kháo Kháo</p>
+                    <p>📚 53 chương</p>
+                    <p>👁️ 12.345 lượt xem</p>
+                    <p class="status">🟢 Kết thúc</p>
+
+                    <a href="#" class="read-btn">Đọc ngay</a>
+                </div>
+            </article>
 
         </div>
-
-    </div>
-
-</section>
-    <section class="latest">
-
-    <h2>📚 Tủ nhỏ nhập thêm sách</h2>
-
-    <div class="book-grid">
-
-        <div class="book-card">
-
-    <img src="https://placehold.co/220x300?text=Cover" alt="Bìa truyện">
-
-    <div class="book-info">
-
-        <h3>Trên Núi Có Chuyện Gì?</h3>
-
-        <p class="genre">Đời thường · Chữa lành · HE</p>
-        
-        <p>Tác giả: Uông Nhạ Nhạ</p>
-        <p>📚 41 chương</p>
-        <p>👁️ 12.345 lượt xem</p>
-        <p class="status">🟢 Kết thúc</p>
-
-<a href="novels/tren-nui-co-chuyen-gi.html" class="read-btn">
-    Đọc ngay
-</a>
-    </div>
-
-</div>
-
-        <div class="book-card">
-
-    <img src="https://placehold.co/220x300?text=Cover" alt="Bìa truyện">
-
-    <div class="book-info">
-
-        <h3>Xám và Trắng</h3>
-
-        
-        <p class="genre">Chữa lành · Tâm lý nhẹ · HE</p>
-        
-        <p>Tác giả: Kháo Kháo</p>
-        <p>📚 53 chương</p>
-        <p>👁️ 12.345 lượt xem</p>
-        <p class="status">🟢 Kết thúc</p>
-
-        <a href="#" class="read-btn">Đọc ngay</a>
-
-    </div>
-
-</div>
-
-    </div>
-
-</section>
+    </section>
 
 </main>
+
+<footer>
+    <p>© Vân Ca Chi Hạ — Một góc nhỏ dành cho những câu chuyện dịu dàng.</p>
+</footer>
 
 </body>
 </html>
