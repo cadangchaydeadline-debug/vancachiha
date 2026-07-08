@@ -1,4 +1,107 @@
-.book-grid{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f3f8f1;
+    color:#263b2d;
+}
+
+.site-header{
+    height:75px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#4f7b5c;
+}
+
+nav{
+    display:flex;
+    gap:28px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#4b5d50;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:#4f7b5c;
+}
+
+.hero{
+    max-width:1100px;
+    margin:55px auto 30px;
+    background:white;
+    border-radius:22px;
+    padding:70px 40px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.hero h1{
+    font-size:42px;
+    color:#4f7b5c;
+    margin-bottom:28px;
+}
+
+.hero p{
+    font-size:23px;
+    font-style:italic;
+    line-height:1.8;
+    color:#657266;
+}
+
+.search-box{
+    max-width:900px;
+    margin:35px auto;
+    display:flex;
+    gap:14px;
+}
+
+.search-box input{
+    flex:1;
+    height:54px;
+    border:1px solid #d7dfd5;
+    border-radius:50px;
+    padding:0 24px;
+    font-size:16px;
+    outline:none;
+}
+
+.search-box button{
+    width:135px;
+    border:none;
+    border-radius:50px;
+    background:#5c8568;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.latest{
+    max-width:1100px;
+    margin:65px auto;
+}
+
+.latest h2{
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.book-list{
     display:flex;
     flex-direction:column;
     gap:30px;
@@ -8,27 +111,51 @@
     background:white;
     border-radius:16px;
     padding:22px;
-    box-shadow:0 8px 24px rgba(0,0,0,.12);
-
     display:flex;
     gap:28px;
     align-items:flex-start;
+    box-shadow:0 10px 25px rgba(63,94,70,.18);
+    transition:.25s;
 }
 
-.book-card img{
+.book-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px rgba(63,94,70,.25);
+}
+
+.cover-box{
+    position:relative;
+    flex-shrink:0;
+}
+
+.cover-box img{
     width:150px;
     height:220px;
     object-fit:contain;
-    border-radius:10px;
     background:#f2f2f2;
+    border-radius:10px;
+    display:block;
+}
+
+.status{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#56c96b;
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+    padding:7px 14px;
+    border-radius:10px;
 }
 
 .book-info{
     flex:1;
+    padding-top:8px;
 }
 
 .book-info h3{
-    font-size:24px;
+    font-size:26px;
     color:#4f7b5c;
     margin-bottom:18px;
 }
@@ -37,35 +164,71 @@
     font-size:16px;
     line-height:1.7;
     margin-bottom:10px;
-    color:#333;
-}
-
-.genre{
-    color:#333 !important;
-    font-weight:normal;
-}
-
-.status{
-    display:inline-block;
-    background:#50c878;
-    color:white !important;
-    padding:8px 16px;
-    border-radius:12px;
-    font-weight:bold;
-    margin-bottom:12px;
+    color:#263b2d;
 }
 
 .read-btn{
     display:inline-block;
-    margin-top:14px;
+    margin-top:16px;
     background:#5c8568;
     color:white;
     text-decoration:none;
-    padding:14px 28px;
+    padding:14px 30px;
     border-radius:50px;
     font-weight:bold;
 }
 
 .read-btn:hover{
     background:#45684f;
+}
+
+footer{
+    background:white;
+    text-align:center;
+    padding:35px;
+    margin-top:80px;
+    color:#6b756b;
+}
+
+@media(max-width:768px){
+    .site-header{
+        height:auto;
+        padding:20px;
+        flex-direction:column;
+        gap:16px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        margin:30px 15px;
+        padding:45px 25px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .search-box{
+        margin:25px 15px;
+        flex-direction:column;
+    }
+
+    .search-box button{
+        width:100%;
+        height:52px;
+    }
+
+    .book-card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
 }
