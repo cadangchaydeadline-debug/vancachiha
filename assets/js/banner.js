@@ -3,38 +3,28 @@ const dots = document.querySelectorAll(".dot");
 
 let current = 0;
 
-function showSlide(i){
+function showSlide(index){
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
 
-    slides.forEach(s=>s.classList.remove("active"));
-    dots.forEach(d=>d.classList.remove("active"));
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
 
-    slides[i].classList.add("active");
-    dots[i].classList.add("active");
-
-    current=i;
-
+    current = index;
 }
 
-dots.forEach((dot,index)=>{
-
-    dot.onclick=function(){
-
+dots.forEach((dot, index) => {
+    dot.onclick = function(){
         showSlide(index);
-
-    }
-
+    };
 });
 
 setInterval(function(){
-
     current++;
 
-    if(current>=slides.length){
-
-        current=0;
-
+    if(current >= slides.length){
+        current = 0;
     }
 
     showSlide(current);
-
-},5000);
+}, 5000);
